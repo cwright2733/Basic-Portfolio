@@ -7,7 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/assets/javascript/Portfolio.js"></script>
     <!-- <script src="main.js"></script> -->
+    <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+
+
+
+
+
 </head>
 <body id="portfolio">
       
@@ -19,6 +69,7 @@
                         <li><a href="portfolio.html">Portfolio</a></li> |
                         <li><a href="contact.html">Contact</a></li> 
                         <li><a href="https://www.linkedin.com/in/cameron-wright-5177b6163/" class="fa fa-linkedin"></a></li>
+
                     </ul>   
     
                     <section id="left">
@@ -27,9 +78,26 @@
              
         </header>
 
+        
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <H3>Acitvites</H3>
+                <hr>
+                <a href="https://cwright2733.github.io/TriviaGame/" style="color:white">World Geography Trivia</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+              
+             
+    
+
+
+
+
 
         <div class="container">
-                <h3 style="text-align: left">Portfolio</h3>
+                <h3 style="text-align: left"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Acitvites</span></h3>
 
                 <hr>
 
@@ -57,9 +125,20 @@
         </div>
 
 
+        <div id=""></div>
+
+
         <footer id="footerindex">&copy; Copyright 2019 Cameron Wright</footer>
 
-
+        <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
 
     
 </body>
