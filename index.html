@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <script src="main.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="index.js"></script>
+
+
 </head>
+
 <body>
 
-        <header>
-                <!-- // navigation bar in header -->
-                    <ul>
-                        <li><a href="index.html">About</a></li> |
-                        <li><a href="portfolio.html">Portfolio</a></li> |
-                        <li><a href="contact.html">Contact</a></li> 
-                        <li><a href="https://www.linkedin.com/in/cameron-wright-5177b6163/" class="fa fa-linkedin"></a></li>
-                    </ul>   
-    
-                    <section id="left">
-                            Cameron Wright
-                    </section>
-    
-                    <section>     
-                  </header>
-
-                  <br>
 
 
 
-                  <div class="AboutMe">
-                      <br>
-                  <h3 style="text-align: left" style="color:green" >About Me</h3>
+    <nav class="navbar sticky-top navbar-light ">
 
-                  <hr id="hr1">
-
-
-                  <p><img style="float: left; margin: 0px 15px 15px 0px;" src= "assets/images/camerongrad.jpg" width="150px" height="150px" />My Name is Cameron Wright. I am 25 years old. I am from Atlanta,Ga. 
-                    I graduated from Arabia Moutain High School and Georgia State University with a Bachelors in Computer Science. I love sports, i played football up untill my sophmore year in college.
-                    ps. I am good at apex!<br style="clear: both;" /></p>
-                  
-
-                </div>
-
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <H3 style="color: greenyellow; text-align: center">Activities</H3>
+            <hr class="hr1">
+            <a href="https://cwright2733.github.io/TriviaGame/" style="color:white">World Geography Trivia</a>
+            <a href="https://cwright2733.github.io/unit-4-game/" style="color:white">Crystal Game</a>
+            <a href="https://cwright2733.github.io/Giphy-API/" style="color:white">Giphy-API</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
 
 
+        <span style="font-size:40px;cursor:pointer; color:whitesmoke;" onclick="openNav()">&#9776; Activities</span>
 
-                <footer id="footerindex">&copy; Copyright 2019 Cameron Wright</footer>
+        
 
-                  
+            <a style="color:whitesmoke" href="index.html">About</a>
+            <a style="color:whitesmoke" href="portfolio.html">Portfolio</a>
+            <a style="color:whitesmoke" href="contact.html">Contact</a>
+        
+
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+    </nav>
+
+
+    <hr>
 
 
 
 
 
-
-    
 </body>
+
 </html>
