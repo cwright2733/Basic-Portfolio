@@ -5,142 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/assets/javascript/Portfolio.js"></script>
-    <!-- <script src="main.js"></script> -->
-    <style>
-        body {
-          font-family: "Lato", sans-serif;
-        }
-        
-        .sidenav {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: #111;
-          overflow-x: hidden;
-          transition: 0.5s;
-          padding-top: 60px;
-        }
-        
-        .sidenav a {
-          padding: 8px 8px 8px 32px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-        }
-        
-        .sidenav a:hover {
-          color: #f1f1f1;
-        }
-        
-        .sidenav .closebtn {
-          position: absolute;
-          top: 0;
-          right: 25px;
-          font-size: 36px;
-          margin-left: 50px;
-        }
-        
-        @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-        }
-        </style>
 
 
-
+ 
+   
 
 
 </head>
-<body id="portfolio">
-      
-
-        <header>
-                <!-- // navigation bar in header -->
-                    <ul>
-                        <li><a href="index.html">About</a></li> |
-                        <li><a href="portfolio.html">Portfolio</a></li> |
-                        <li><a href="contact.html">Contact</a></li> 
-                        <li><a href="https://www.linkedin.com/in/cameron-wright-5177b6163/" class="fa fa-linkedin"></a></li>
-
-                    </ul>   
+<body>
+  <ul>
+  <nav class="navbar fixed-top navbar-light bg-light">
     
-                    <section id="left">
-                            Cameron Wright
-                    </section>
-             
-        </header>
-
-        
         <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <H3 style="color: greenyellow">Activities</H3>
-                <hr>
-                <a href="https://cwright2733.github.io/TriviaGame/" style="color:white">World Geography Trivia</a>
-                <a href="https://cwright2733.github.io/unit-4-game/" style="color:white">Crystal Game</a>
-                <a href="https://cwright2733.github.io/Giphy-API/" style="color:white">Giphy-API</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-              </div>
-              
-             
-    
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <H3 style="color: greenyellow; text-align: center">Projects</H3>
+            <hr class="hr1">
+            <a href="https://tpgaviria.github.io/MeetUpApp/" style="color:white">Meetup</a>
+            <a href="https://github.com/cwright2733/ContactFileManager" style="color:white">Contact File Manager </a>
+            <a href="https://github.com/cwright2733/Revature-BootCamp-Projects" style="color:white">Spring Breakers</a>
+           
+          </div>
+          
+  
+         <h2><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Projects</span></h2> 
+
+    <span> 
+    <a class="navbar-brand" href="index.html"><h2>Index</h2></a> 
+    <a class="navbar-brand" href="contact.html"><h2>Contact</h2></a> 
+    <a class="navbar-brand" href="./assets/images/Cameron Wright Official Resume.pdf"><h2>Resume</h2></a>
+    <a class="navbar-brand" href="https://github.com/cwright2733"><h2>GitHub</h2></a> 
+    </span>   
+    <span><h1>Cameron Wright</h1></span>
+    </ul>
+
+  </nav>
 
 
 
 
+  
 
-        <div class="container">
-                <h3 style="text-align: left"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Acitvities</span></h3>
-
-                <hr>
-
-                <br>
-
-                
-                        <div class="column1" style="text-align: left">
-                         <img src="http://lorempixel.com/400/200"  width="150px" height="150px"> 
-                         <img src="http://lorempixel.com/400/200"  width="150px" height="150px"> 
-                          <br>
-                          <img src="http://lorempixel.com/400/200"  width="150px" height="150px"> 
-                          <img src="http://lorempixel.com/400/200"  width="150px" height="150px"> 
-                          <br>
-                          <img src="http://lorempixel.com/400/200"  width="150px" height="150px"> 
-                        </div>
-                          
-    
-                      
-
-
-                   
+  
 
 
 
-        </div>
-
-
-        <div id=""></div>
-
-
-        <footer id="footerindex">&copy; Copyright 2019 Cameron Wright</footer>
-
-        <script>
-                function openNav() {
-                  document.getElementById("mySidenav").style.width = "250px";
-                }
-                
-                function closeNav() {
-                  document.getElementById("mySidenav").style.width = "0";
-                }
-                </script>
-
-    
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>  
 </body>
 </html>
